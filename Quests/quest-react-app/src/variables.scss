@@ -1,0 +1,35 @@
+//color variables
+
+$white: #ffffff;
+$yellow: #D9A774;
+$grey: #60747C;
+$black: #000000;
+$lightBlack: #131715;
+$lightYellow: rgba(255, 255, 237, 0.8);
+$lightOrange: #D9A774;
+
+//text color variables
+
+$txt_color0: $yellow;
+$txt_color1: $grey;
+$txt_color2: $lightYellow;
+$txt_color3: $black;
+
+//border color variables
+
+$brdr_color0: $grey;
+$brdr_color1: $lightYellow;
+
+//background color variables
+
+$bg_color0: $grey;
+$bg_color1: $black;
+$bg_color2: $lightBlack;
+$bg_color3: $lightOrange;
+
+@mixin setFont($family, $weight, $size, $lineHeight) {
+  font-family: $family, sans-serif;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+}

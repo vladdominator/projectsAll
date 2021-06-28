@@ -1,0 +1,71 @@
+header {
+  min-height: 740px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(64, 65, 73, 0.9)), to(rgba(64, 65, 73, 0.9))), url(../images/Rectangle.png) center center no-repeat;
+  background: -o-linear-gradient(rgba(64, 65, 73, 0.9), rgba(64, 65, 73, 0.9)), url(../images/Rectangle.png) center center no-repeat;
+  background: linear-gradient(rgba(64, 65, 73, 0.9), rgba(64, 65, 73, 0.9)), url(../images/Rectangle.png) center center no-repeat;
+  background-size: cover;
+}
+
+header #nav-container {
+  max-width: 1100px;
+  padding-top: 10px;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.navbar-toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F7654A;
+  width: 50px;
+  height: 50px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.nav-link {
+  -webkit-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  text-decoration: none;
+  color: #000;
+  font-size: 24px;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #F7654A;
+}
+
+.container-xxl {
+  max-width: 1100px;
+}
+
+#container-building {
+  margin-top: 112px;
+}
+
+#container-building #project__building1 #project__building__text1 {
+  line-height: 103px;
+  min-height: 185px;
+  text-align: center;
+  color: #fff;
+  font-size: 64px;
+}
+
+#container-building #project__building2 {
+  margin-top: 15px;
+}
+
+#container-building #project__building2 #project__building__text2 {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}

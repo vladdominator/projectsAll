@@ -1,0 +1,17 @@
+@import "normalize";
+@import "variables";
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background-color: $bg_color3;
+}
+
+@import "components/mainPages/exhibition/index";
+@import "components/mainPages/shop/index";
+@import "components/mainPages/home/index";
+@import "components/mainPages/noMatch/index";
+@import "components/mainPages/header/index";
+@import "components/mainPages/footer/index";

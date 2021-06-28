@@ -1,0 +1,5 @@
+﻿  Жилинский_1_Таблицы.cpp
+C:\Users\Vlad Gitler\Desktop\projects c++\Project230\Project230\Жилинский_1_Таблицы.cpp(10,28): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Vlad Gitler\Desktop\projects c++\Project230\Project230\Жилинский_1_Таблицы.cpp(10,37): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Vlad Gitler\Desktop\projects c++\Project230\Project230\Жилинский_1_Таблицы.cpp(17,11): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+  Project230.vcxproj -> C:\Users\Vlad Gitler\Desktop\projects c++\Project230\Debug\Project230.exe

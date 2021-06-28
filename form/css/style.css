@@ -1,0 +1,85 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto', sans-serif;
+}
+body{
+   margin-top: 15px;
+}
+.form__container{
+   padding: 20px 0 10px 0;
+   display: flex;
+   width: 350px;
+   align-items: center;
+   margin:0 auto;
+  flex-direction: column;
+  background-color: #E2F2E5;
+}
+.form__item{
+   border-radius: 30px;
+   width: 330px;
+   height: 30px;
+   background-color: #71B28A;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.text{
+   font-weight: bold;
+   font-size: 25px;
+}
+form{
+   margin-top: 15px;
+}
+legend{
+   font-weight: bold;
+}
+fieldset{
+   font-size: 16px;
+   width: 280px;
+   padding: 10px;
+   border: 2px solid #71B28A;
+}
+p{
+   margin-left: 8px;
+}
+img{
+   width: 55px;
+   margin-left: 45px;
+}
+.frame__container{
+   display: flex;
+   flex-direction: column;
+}
+#text{
+   width: 174px;
+}
+.container__frameset{
+   display: flex;
+   margin-top: 10px;
+}
+button{
+   margin-left: 7px;
+   width: 40px;
+   font-size: 16px;
+   border-radius: 3px;
+}
+.test{
+   width: 140px;
+}
+.number{
+   width: 60px;
+}
+.button__item{
+   text-align: center;
+   font-size: 16px;
+   margin-top: 20px;
+}
+.ok{
+   width: 40px;
+   border-radius: 3px;
+}
+.no{
+   width: 70px;
+   border-radius: 3px;
+}

@@ -1,0 +1,27 @@
+.header {
+    min-height: 100px;
+    background-color: #3399FF;
+    &__items {
+        width: 150px;
+        height: 40px;
+        background-color: #000033;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-right: 40px;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        min-height: 100px;
+    }
+    &__text {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}

@@ -1,0 +1,40 @@
+@import "../../../variables";
+
+.quest-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+
+  .quest-img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid $brdr_color1;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  .quest-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: $txt_color2;
+    margin-bottom: 10px;
+
+
+    .people {
+      text-align: right;
+    }
+  }
+
+
+  .btn {
+    margin-right: auto;
+    background-color: $bg_color3;
+    padding: 5px 10px;
+    color: $txt_color3;
+    border-radius: 25px;
+    @include setFont('Amiri', 500, 1.2rem, 1.6rem);
+    cursor: pointer;
+    user-select: none;
+  }
+}

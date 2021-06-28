@@ -1,0 +1,132 @@
+.input__text {
+    width: 200px;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    padding-left: 20px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.input__color {
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 30px;
+}
+.create__cars {
+    display: flex;
+}
+.button__create {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #3399FF;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.update__cars {
+    margin-top: 30px;
+    display: flex;
+}
+.settings__start {
+    margin-top: 30px;
+}
+.settings__race, .reset__race {
+    width: 80px;
+    height: 35px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #3399FF;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    pointer-events: auto;
+    &:nth-child(even) {
+        margin-left: 16px;
+    }
+}
+.reset__race-remove {
+  background-color: #ccc;
+  pointer-events: none;
+}
+.settings__race-active {
+   background-color: #ccc;
+   pointer-events: none;
+}
+.generate__cars {
+    width: 200px;
+    height: 35px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #3399FF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 16px;
+}
+.generate__cars-active {
+  pointer-events: none;
+  background-color: #ccc;
+}
+.input__update {
+    width: 200px;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    padding-left: 20px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #ccc;
+    pointer-events: none;
+}
+.input__color-update {
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    margin-left: 30px;
+    background-color: #ccc;
+    pointer-events: none;
+}
+.input__update-active {
+    pointer-events: auto;
+    background-color: #fff;
+}
+.input__color-update-active {
+    background-color: #fff;
+    pointer-events: auto;
+}
+.button__update {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    pointer-events: none;
+    background-color: #ccc;
+    margin-left: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.button__update-active {
+    background-color: #3399FF;
+    pointer-events: auto;
+}
+.button__create-active {
+  background-color: #ccc;
+  pointer-events: none;
+}

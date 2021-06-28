@@ -1,0 +1,70 @@
+body{
+   background-color: #FF5369;
+   font-family: 'Roboto', sans-serif;
+   color: #fff;
+}
+.to-do__text{
+   text-align: center;
+}
+.to-do__container{
+   max-width: 391px;
+   margin: 30px auto;
+}
+form{
+   position: relative;
+}
+input{
+   font-family: 'Roboto', sans-serif;
+   font-size:20px;
+   border: 0;
+   padding-left: 10px;
+   width: 300px;
+   height: 48px;
+}
+button{
+   font-weight: 600;
+   cursor: pointer;
+   color: #6CA5EC;
+   font-size:20px;
+   position: absolute;
+   height: 50px;
+   background-color: #fff;
+   border: 0;
+   width: 80px;
+}
+#close,#yes{
+    cursor: pointer;
+}
+#text{
+   width: 250px;
+   word-wrap: break-word;
+   line-height: 26px;
+}
+.to-do__sourse{
+   padding: 10px 30px 30px 30px;
+   height: 300px;
+   margin: 30px 0 0 0;
+   background-color: #fff;
+   overflow-y: scroll;
+}
+.to-do__let{
+   margin-top: 20px;
+}
+.active{
+   text-decoration: line-through;
+}
+.to-do__let{
+   font-size: 18px;
+   display: flex;
+   justify-content: space-between;
+}
+.to-do__clear{
+   text-align: center;
+   cursor: pointer;
+   font-weight: 600;
+   color:#000;
+   font-size:20px;
+}
+span,p{
+   color:#000;
+}

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+  color: #fff;
+  font-size: 40px;
+}
+
+.container-calculator {
+  background-color: #000;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.container-calculator input {
+  text-align: right;
+  font-size: 70px;
+  width: 300px;
+  background-color: #000;
+  border: 0;
+  height: 70px;
+}
+
+.container-calculator .rad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.container-calculator .rad .button1 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  width: 65px;
+  color: #000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #999999;
+}
+
+.container-calculator .rad .button1:active {
+  border: 0;
+}
+
+.container-calculator .rad .button {
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  border-radius: 50%;
+  background-color: orange;
+}
+
+.container-calculator .rad .button2 {
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #444444;
+}
+
+.container-calculator .rad .button3 {
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 143.33333px;
+  padding-left: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65px;
+  border-radius: 30px;
+  background-color: #444444;
+}
+/*# sourceMappingURL=style.css.map */

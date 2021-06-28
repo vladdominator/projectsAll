@@ -1,0 +1,19 @@
+@import "variables";
+@import "normalize";
+
+.main-wrapper {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background-color: $bg_color2;
+}
+
+@import "components/mainPages/home/index";
+@import "components/mainPages/reviews/index";
+@import "components/mainPages/genre/index";
+@import "components/mainPages/questLocation/index";
+@import "components/mainPages/noMatch/index";
+@import "components/mainPages/header/index";
+@import "components/mainPages/footer/index";
+@import "components/helpers/questItem/index";

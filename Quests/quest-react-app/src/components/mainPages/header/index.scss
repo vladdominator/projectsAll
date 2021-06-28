@@ -1,0 +1,47 @@
+@import "../../../variables";
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $bg_color1;
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .logo {
+      color: $txt_color0;
+      margin-right: 50px;
+      @include setFont('Girassol', 400, 1.875rem, 2.25rem);
+    }
+
+    .nav-bar {
+      .nav-item {
+        @include setFont('Girassol', 400, 1.125rem, 1.35rem);
+        color: $txt_color1;
+        margin-right: 10px;
+      }
+
+      .nav-active {
+        border-bottom: 1px solid $brdr_color0;
+      }
+    }
+  }
+
+  .quest-inp {
+    border-radius: 25px;
+    min-height: 30px;
+    background: url(./../../../img/loupe.svg) no-repeat 7px 50%, $bg_color0;
+    background-size: 8%;
+    padding-left:30px;
+  }
+
+  .quest-inp::placeholder {
+    color: black;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "reactcomponent",
+  "version": "0.1.0",
+  "description": "native framework js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  },
+  "author": "vladdominator",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.2.0",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "materialize-css": "^1.0.0"
+  }
+}

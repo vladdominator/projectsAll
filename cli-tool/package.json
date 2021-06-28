@@ -1,0 +1,23 @@
+{
+  "name": "cli-tool",
+  "version": "1.0.0",
+  "description": "tast 1",
+  "main": "my_caesar_cli",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladdominator/cli-tool.git"
+  },
+  "author": "vladdominator",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladdominator/cli-tool/issues"
+  },
+  "homepage": "https://github.com/vladdominator/cli-tool#readme",
+  "dependencies": {
+    "commander": "^7.2.0",
+    "through2": "^4.0.2"
+  }
+}

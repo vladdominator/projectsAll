@@ -1,0 +1,29 @@
+.winners__item {
+  width: 700px;
+  display: flex;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  align-items: center;
+}
+.winners__index-car {
+  width: 145px;
+  display: flex;
+}
+.car__image_win {
+  width: 50px;
+}
+.winners__name-car {
+  margin-left: 20px;
+  width: 160px;
+}
+.winners__wins-car {
+  display: flex;
+  justify-content: center;
+  width: 30px;
+}
+
+.winners__time-car {
+  margin-left: 135px;
+}

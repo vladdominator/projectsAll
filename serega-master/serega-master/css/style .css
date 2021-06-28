@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  width: 100%;
+  height: 100vh;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); }
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto; }
+
+a {
+  color: #555;
+  text-decoration: none; }
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 200px; }
+
+.header__item {
+  font-size: 3.6em;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  width: 200px;
+  background-color: #555;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#FFDEE9), to(#B5FFFC));
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  border-radius: 8px;
+  border: 3px solid #555; }
+
+.logo {
+  color: #eee;
+  font-size: 3.6em;
+  letter-spacing: 0.5em; }
+
+.main__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 300px;
+  margin-bottom: 10px;
+  padding: 50px;
+  border: 5px solid #444;
+  border-radius: 20px; }
+
+.title {
+  color: #333;
+  font-size: 2.2em;
+  margin-bottom: 10px; }
+
+.title1 {
+  font-size: 4em;
+  color: #333;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 50px; }
+
+.input {
+  font-size: 1.8em;
+  color: #333;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  padding-left: 10px;
+  width: 300px; }
+
+.btn-submit {
+  outline: none;
+  font-size: 1.8em;
+  border: none;
+  border-radius: 5px;
+  margin-left: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .1s linear;
+  transition: all .1s linear; }
+  .btn-submit:hover {
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.4);
+            box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.4); }
+
+.output {
+  width: 100%;
+  height: 290px;
+  padding: 15px;
+  border: 5px solid #444;
+  border-radius: 20px;
+  text-align: center;
+  overflow-x: scroll;
+  font-size: 1.6em;
+  color: #333; }

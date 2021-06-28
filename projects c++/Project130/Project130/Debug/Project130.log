@@ -1,0 +1,8 @@
+﻿  Жилинский_1_Таблицы.cpp
+C:\Users\Vlad Gitler\Desktop\projects c++\Project130\Project130\Жилинский_1_Таблицы.cpp(18,44): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+C:\Users\Vlad Gitler\Desktop\projects c++\Project130\Project130\Жилинский_1_Таблицы.cpp(28,26): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+C:\Users\Vlad Gitler\Desktop\projects c++\Project130\Project130\Жилинский_1_Таблицы.cpp(50,39): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+C:\Users\Vlad Gitler\Desktop\projects c++\Project130\Project130\Жилинский_1_Таблицы.cpp(50,69): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+C:\Users\Vlad Gitler\Desktop\projects c++\Project130\Project130\Жилинский_1_Таблицы.cpp(51,17): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+C:\Users\Vlad Gitler\Desktop\projects c++\Project130\Project130\Жилинский_1_Таблицы.cpp(51,47): warning C4244: 'argument': conversion from 'double' to 'std::streamsize', possible loss of data
+  Project130.vcxproj -> C:\Users\Vlad Gitler\Desktop\projects c++\Project130\Debug\Project130.exe

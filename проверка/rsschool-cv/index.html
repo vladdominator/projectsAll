@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+   <title>Biography</title>
+</head>
+<body>
+   <header>
+      <img src="files/me.jpg" alt="me" class="me">
+      <p class="me__name">
+         Vladislav Zhilinskiy
+      </p>
+      <p class="me__job">
+         Frontend devoloper
+      </p>
+   </header>
+   <section>
+      <div class="about__me">
+         <h1>About me</h1>
+         <p>
+            I study at BSU. Independent work for about a year. I am working hard to become a front-end developer.
+         </p>
+      </div>
+      <div class="skills">
+         <h1>
+            Skills
+         </h1>
+         <ul>
+            <li>HTMl5</li>
+            <li>Css3</li>
+            <li>Sass</li>
+            <li>Javascript</li>
+            <li>Docker</li>
+            <li>Git</li>
+            <li>C++</li>
+         </ul>
+      </div>
+      <div class="examples">
+         <h1>
+            Code examples
+         </h1>
+        <pre>
+         <code type='Javascript'>
+            let personal = {</br>
+               [Symbol.iterator](){</br>
+                let i = 0;</br>
+                  return{</br>
+                   next(){</br>
+                      if(i<arr.length){</br>
+                         return { </br>
+                            value:arr[i++],</br>
+                            done:false</br>
+                         }</br>
+                      }</br>
+                      else{</br>
+                         return {</br>
+                            value:undefined,</br>
+                            done:true</br>
+                         }</br>
+                      }</br>
+                   }</br>
+                  } </br>
+             }</br>
+          }
+          for(key of personal){
+            console.log(key); 
+         }
+         </br>
+         </code>
+        </pre>
+      </div>
+      <div class="projects">
+         <h1>
+            Projects
+         </h1>
+         <p>
+            <a href="https://github.com/vladdominator/REDPEAS">https://github.com/vladdominator/REDPEAS</a>
+         </p>
+         <p>
+            <a href="https://vladdominator.github.io/">https://vladdominator.github.io/</a>
+         </p>
+         </div>
+      <div class="education">
+         <h1>
+            Education
+         </h1>
+         <p>
+            Web programming Faculty of Mechanics and Mathematics, BSU.
+         </p>
+      </div>
+      <div class="level">
+         <h1>
+            English level
+         </h1>
+         <p>
+            A2(Pre-intermediate)
+         </p>
+      </div>
+   </section>
+   <footer>
+      <a href="https://vk.com/id360478769">
+         <img src="files/vk.png" alt="vk">
+      </a>
+      <a href="https://t.me/vladDominator">
+         <img src="files/telegram.png" alt="telegram">
+      </a>
+      <a href="https://www.instagram.com/v.zhilinskiy/?hl=ru">
+         <img src="files/instagram.png" alt="instagram">
+      </a>
+   </footer>
+</body>
+</html>

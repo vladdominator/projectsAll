@@ -1,0 +1,90 @@
+.car__item {
+    margin-top: 20px;
+    &-settings {
+        display: flex;
+        align-items: center;
+    }
+}
+.car__buttons-action {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    background-color: #3399FF;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+#car__remove {
+    margin-left: 15px;
+}
+.car__name {
+    margin-left: 40px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.cars__move {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 4px dashed #fff;
+}
+.button__drive {
+    pointer-events: auto;
+    width: 50px;
+    height: 50px;
+    border: 3px solid lawngreen;
+    background-color: inherit;
+    color: lawngreen;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.button__drive-active {
+    border: 3px solid #ccc;
+    color: #ccc;
+    pointer-events: none;
+}
+.button__stop-drive {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ccc;
+    background-color: inherit;
+    color: #ccc;
+    border-radius: 10px;
+    margin-left: 10px;
+    pointer-events: none;
+    font-size: 18px;
+}
+.button__stop-drive-active {
+    pointer-events: auto;
+    border: 3px solid red;
+    color: red;
+}
+.car__image {
+    width: 100px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.car__field {
+    display: flex;
+}
+.field__flag {
+    margin-right: 150px;
+    path {
+        fill: red;
+    }
+}
+.car__buttons-action-active {
+  pointer-events: none;
+  background: #ccc;
+}
+@media screen and (max-width: 700px) {
+  .field__flag {
+    margin-right: 100px;
+  }
+}

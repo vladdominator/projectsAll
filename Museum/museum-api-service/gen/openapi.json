@@ -1,0 +1,220 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Museum",
+    "version" : "0.1.0"
+  },
+  "servers" : [ {
+    "url" : "http://localhost:10010/api/v1"
+  } ],
+  "paths" : {
+    "/exhibition" : {
+      "get" : {
+        "description" : "Returns exhibition to the caller",
+        "operationId" : "exhibition",
+        "parameters" : [ {
+          "name" : "date",
+          "in" : "query",
+          "description" : "Date of exhibition",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ExhibitionResponse"
+                }
+              }
+            }
+          },
+          "default" : {
+            "description" : "Error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "x-swagger-router-controller" : "exhibition"
+    },
+    "/main" : {
+      "get" : {
+        "description" : "Returns main to the caller",
+        "operationId" : "main",
+        "parameters" : [ {
+          "name" : "date",
+          "in" : "query",
+          "description" : "Main exhibition",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MainResponse"
+                }
+              }
+            }
+          },
+          "default" : {
+            "description" : "Error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "x-swagger-router-controller" : "main"
+    },
+    "/shop" : {
+      "get" : {
+        "description" : "Returns shop to the caller",
+        "operationId" : "shop",
+        "parameters" : [ {
+          "name" : "date",
+          "in" : "query",
+          "description" : "Shop",
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ShopResponse"
+                }
+              }
+            }
+          },
+          "default" : {
+            "description" : "Error",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "x-swagger-router-controller" : "shop"
+    },
+    "/swagger" : {
+      "x-swagger-pipe" : "swagger_raw"
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "ExhibitionResponse" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/components/schemas/Exhibition"
+        }
+      },
+      "MainResponse" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/components/schemas/Main"
+        }
+      },
+      "ShopResponse" : {
+        "type" : "array",
+        "items" : {
+          "$ref" : "#/components/schemas/Shop"
+        }
+      },
+      "Exhibition" : {
+        "type" : "object",
+        "properties" : {
+          "name-exhibi" : {
+            "type" : "string"
+          },
+          "image-exhibi" : {
+            "type" : "string"
+          },
+          "cost-exhibi" : {
+            "type" : "string"
+          },
+          "name-guide" : {
+            "type" : "string"
+          },
+          "image-guide" : {
+            "type" : "string"
+          },
+          "ratio-guide" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Main" : {
+        "type" : "object",
+        "properties" : {
+          "id" : {
+            "type" : "number"
+          },
+          "nameExhibi" : {
+            "type" : "string"
+          },
+          "imageExhibi" : {
+            "type" : "string"
+          },
+          "descriptionExhibi" : {
+            "type" : "string"
+          },
+          "imageNews" : {
+            "type" : "string"
+          },
+          "descriptionNews" : {
+            "type" : "string"
+          }
+        }
+      },
+      "Shop" : {
+        "type" : "object",
+        "properties" : {
+          "name-product" : {
+            "type" : "string"
+          },
+          "image-product" : {
+            "type" : "string"
+          },
+          "cost-exhibi" : {
+            "type" : "string"
+          },
+          "price" : {
+            "type" : "string"
+          }
+        }
+      },
+      "ErrorResponse" : {
+        "required" : [ "message" ],
+        "type" : "object",
+        "properties" : {
+          "message" : {
+            "type" : "string"
+          }
+        }
+      }
+    }
+  }
+}

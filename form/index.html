@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <title>Form</title>
+</head>
+<body>
+   <div class="form__container">
+      <div class="form__item">
+         <p class="text"> Форма с UI элементами</p>
+      </div>
+      <form action="formGO">
+         <fieldset>
+            <legend>
+               Radio
+            </legend>
+            <p><input type="radio" class="radio">Первый</br>
+            <input type="radio" class="radio">Второй</br>
+            </p>
+         </fieldset>
+         <fieldset>
+            <legend>
+               Frame
+            </legend>
+            <div class="frame__container">
+           <img src="images/Coat_of_arms_of_BSU.png" alt="Coat_of_arms_of_BSU">
+           <div class="container__frameset">
+           <input type="text" name="formGO" id="text">
+           <button type="text">Ok</button>
+      </div>
+      </div>
+         </fieldset>
+         <fieldset>
+            <legend>
+               Checkbox
+            </legend>
+            <p><input type="checkbox" class="checkbox">Первый</br>
+            <input type="checkbox" class="checkbox">Второй</br>
+            <input type="checkbox" class="checkbox">Третий</br>
+            </p>
+         </fieldset>
+         <fieldset>
+            <legend>
+               Listbox
+            </legend>
+            <p>
+               <select name="Listbox" id="Listbox" size="3">
+                  <option value="1">Первый</option>
+                  <option value="2">Второй</option>
+                  <option value="3">Третий</option>
+                  <option value="4">Четвертый</option>
+                  <option value="5">Пятый</option>
+                  <option value="6">Шестой</option>
+            </select>
+            </p>
+         </fieldset>
+         <fieldset>
+            <legend>
+               Combobox
+            </legend>
+            <p>
+               <select name="Combobox" id="Combobox">
+                  <option value="1">Первый</option>
+                  <option value="2">Второй</option>
+                  <option value="3">Третий</option>
+                  <option value="4">Четвертый</option>
+                  <option value="5">Пятый</option>
+                  <option value="6">Шестой</option>
+            </select>
+            </p>
+         </fieldset>
+         <fieldset>
+            <legend>
+               Ползунок
+            </legend>
+            <p>
+               <input type="range" value="test" min="1" max="8" class="test">
+            </p>
+         </fieldset>
+         <fieldset>
+            <legend>
+               Счетчик
+            </legend>
+            <p>
+               <input type="number" value="1"  class="number">
+            </p>
+         </fieldset>
+         <div class="button__item">
+           <input type="submit" value="Ок" class="ok">
+           <input type="submit" value="Отмена" class="no">
+         </div>
+      </form>
+   </div>
+</body>
+</html>

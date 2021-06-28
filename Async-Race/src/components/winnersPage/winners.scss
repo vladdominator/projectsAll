@@ -1,0 +1,45 @@
+.winners__count {
+   color: #fff;
+   font-size: 30px;
+   font-weight: 600;
+   &_text {
+      text-transform: uppercase;
+   }
+}
+.winners__page {
+   margin-top: 20px;
+   color: #fff;
+   font-size: 23px;
+   font-weight: 600;
+   display: flex;
+   &_brace {
+      margin-left: 6px;
+   }
+}
+.winners__properties  {
+   margin-top: 30px;
+   width: 700px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #fff;
+   font-size: 23px;
+   font-weight: 600;
+   height: 50px;
+   background-color: #3399FF;
+   padding: 0 10px 0 10px;
+   border-radius: 3px;
+}
+.time__property, .wins__property {
+  display: flex;
+  cursor: pointer;
+}
+.wins, .time {
+  margin-left: 5px;
+  &.disable {
+    display: none;
+  }
+  &.sort {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,26 @@
+.nav-garage, .nav-winners {
+    margin-top: 30px;
+    display: flex;
+}
+.prev__garage, .next__garage, .prev__winners, .next__winners {
+    width: 150px;
+    height: 40px;
+    background-color: #ccc;
+    pointer-events: none;
+    border: 0;
+    border-radius: 7px;
+    &_text {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+.prev__garage-active, .next__garage-active, .prev__winners-active, .next__winners-active {
+    background-color: #3399FF;
+    pointer-events: auto;
+}
+.next__garage, .next__winners {
+    margin-left: 20px;
+}

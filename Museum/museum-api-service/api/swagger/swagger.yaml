@@ -1,0 +1,152 @@
+swagger: "2.0"
+info:
+  version: "0.1.0"
+  title: Museum
+# during dev, should point to your local machine
+host: localhost:10010
+# basePath prefixes all resource paths 
+basePath: /api/v1
+# 
+schemes:
+  # tip: remove http to make production-grade
+  - http
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /exhibition:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: exhibition
+    get:
+      description: Returns exhibition to the caller
+      # used as the method name of the controller
+      operationId: exhibition
+      parameters:
+        - name: date
+          in: query
+          description: Date of exhibition
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/ExhibitionResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /main:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: main
+    get:
+      description: Returns main to the caller
+      # used as the method name of the controller
+      operationId: main
+      parameters:
+        - name: date
+          in: query
+          description: Main exhibition
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/MainResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /shop:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: shop
+    get:
+      description: Returns shop to the caller
+      # used as the method name of the controller
+      operationId: shop
+      parameters:
+        - name: date
+          in: query
+          description: Shop
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/ShopResponse"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+  ExhibitionResponse:
+    type: array
+    items:
+      $ref: "#/definitions/Exhibition"
+  MainResponse:
+    type: array
+    items:
+      $ref: "#/definitions/Main"
+  ShopResponse:
+    type: array
+    items:
+      $ref: "#/definitions/Shop"
+  Exhibition:
+    properties:
+      name-exhibi:
+        type: string
+      image-exhibi:
+        type: string
+      cost-exhibi:
+        type: string
+      name-guide:
+        type: string
+      image-guide:
+        type: string
+      ratio-guide:
+        type: string
+  Main:
+    properties:
+      id:
+        type: number
+      nameExhibi:
+        type: string
+      imageExhibi:
+        type: string
+      descriptionExhibi:
+        type: string
+      imageNews:
+        type: string
+      descriptionNews:
+        type: string
+  Shop:
+    properties:
+      name-product:
+        type: string
+      image-product:
+        type: string
+      cost-exhibi:
+        type: string
+      price:
+        type: string
+      
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string

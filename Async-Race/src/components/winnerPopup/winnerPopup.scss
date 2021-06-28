@@ -1,0 +1,42 @@
+.winners__popup {
+   position: fixed;
+   width: 100%;
+   z-index: 1000;
+   height: 100%;
+   background: rgba(0,0,0,0.3);
+   top: 0;
+   left: 0;
+}
+.winners__body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.winners__content {
+   background-color: #fff;
+   border-radius: 4px;
+   padding: 0 10px 0 10px;
+   width: 450px;
+   height: 112px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.winners__text-popup {
+   color: #3399FF;
+   font-size: 24px;
+   font-weight: 600;
+}
+.button__remove-popup {
+   width: 100px;
+   height: 35px;
+   background: #3399FF;
+   color: #fff;
+   font-size: 24px;
+   font-weight: 600;
+   margin-top: 20px;
+   border: 0;
+   border-radius: 4px;
+}

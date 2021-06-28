@@ -1,0 +1,87 @@
+@import "../../../variables";
+
+.genre-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+
+  .title {
+    @include setFont('Amiri', 400, 2.8125rem, 3.375rem);
+    margin-top: 30px;
+    color: $txt_color2;
+  }
+
+  .description {
+    @include setFont('Amiri', 400, 1.875rem, 2.25rem);
+    margin: 20px 0 30px 0;
+    color: $txt_color2;
+  }
+
+  .results {
+    display: flex;
+    flex-direction: row;
+
+    .quest-block{
+      display: flex;
+      flex-direction: column;
+
+      .quest-list {
+        display: flex;
+        flex-direction: column;
+        color: $txt_color2;
+        min-width: 140px;
+
+        .quest-title {
+          @include setFont('Amiri', 400, 1.875rem, 2.25rem);
+        }
+
+        &.difficulty {
+          margin-top: 20px;
+        }
+
+        .list-item {
+          margin-bottom: 3px;
+          border-bottom: 1px solid transparent;
+        }
+
+        .list-item:hover {
+          border-bottom: 1px solid $brdr_color1;
+          cursor: pointer;
+        }
+      }
+
+      .date-block {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+
+        >span {
+          color: $txt_color2;
+          @include setFont('Amiri', 400, 1.875rem, 2.25rem);
+        }
+
+        .react-datepicker-wrapper {
+          margin-top: 5px;
+          input {
+            border-radius: 25px;
+            padding: 5px;
+          }
+        }
+
+      }
+    }
+
+    .quest-gallery {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .quest-item-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        flex: 0 0 50%;
+      }
+    }
+  }
+}

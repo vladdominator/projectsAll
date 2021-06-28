@@ -1,0 +1,74 @@
+*{
+   margin:0;
+   padding: 0;
+   color:white;
+}
+body{
+   background-image: url(../images/simple-business-people-icons_23-2147491693.jpg) ;
+}
+.container{
+   max-width: 1400px;
+   display: flex;
+   margin: 0 auto;
+   justify-content: center;
+}
+.about{
+   text-decoration: none;
+   font-size: 25px;
+}
+.about:not(:nth-child(1)){
+   margin-left: 20px;
+}
+.about:hover{
+   color:green;
+}
+.container1{
+   background: url(../images/delovye-svyazi-nalazhivanie-delovyx-svyazej-v-biznese.jpg) center center no-repeat;
+  background-size: cover;
+   max-width: 1400px;
+   height: 300px;
+   display: flex;
+   margin: 30px auto;
+}
+.container3{
+   max-width: 1400px;
+   background: url(../images/1400477776_002.jpg) center center no-repeat;
+   background-size: cover;
+   display: flex;
+   margin: 30px auto;
+   justify-content:space-around;
+}
+.menu{
+   display:flex;
+   flex-direction: column;
+}
+.id{
+   text-decoration: none;
+   color: blue;
+   margin-top: 20px;
+   font-size: 20px;
+}
+.id:hover{
+   color:red;
+}
+h1{
+   color: green;
+}
+.imen{
+  padding: 0 0 0 200px;
+   background:url(../images/business-1149630_960_720.jpg) center center no-repeat;
+   background-size: cover;
+   width: 700px;
+   font-size: 20px;
+   color:blue;
+}
+p{
+   color: blue;
+}
+.class1{
+   display: flex;
+   margin: auto;
+   justify-content: center;
+   font-size: 30px;
+}
+

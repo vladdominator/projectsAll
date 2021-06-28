@@ -1,0 +1,23 @@
+footer {
+  background-color: #404149;
+  min-height: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer .container-xxl #footer__container #footer__item2 {
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+}
+
+footer .container-xxl #footer__container #footer__item1 {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+}

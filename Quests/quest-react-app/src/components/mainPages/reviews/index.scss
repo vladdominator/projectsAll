@@ -1,0 +1,60 @@
+@import "../../../variables";
+
+.reviews-wrapper {
+    width: 80%;
+    margin: 30px auto;
+
+    .reviews-title {
+        @include setFont('Amiri', 50px, 1.2font-size, bolder);
+        color: $white;
+        text-align: center;
+    }
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+
+        .reviews-item {
+            display: flex;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: $bg_color0;
+            border: 1px solid $brdr_color1;
+            border-radius: 15px;
+
+            .review-image {
+                width: 100px;
+                height: 100px;
+                margin-right: 20px;
+                border-radius: 15px;
+
+                img {
+                    display: block;
+                    height: 100%;
+                    border-radius: 15px;
+                }
+            }
+
+            .review-desc {
+                @include setFont('Amiri', normal, 18px, 1.2font-size);
+                color: $txt_color3;
+                width: calc(100% - 60px);
+
+                .review-name {
+                    @include setFont('Amiri', bolder, 20px, 1.2font-size);
+                    font-weight: 600;
+                }
+
+                .review-text {
+                    margin-top: 10px;
+                }
+
+                .review-date {
+                    text-align: right;
+                    margin-top: 20px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

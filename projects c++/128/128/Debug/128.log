@@ -1,0 +1,4 @@
+﻿  Zhilinskiy_1_Functions.cpp
+C:\Users\Vlad Gitler\Desktop\projects c++\128\128\Zhilinskiy_1_Functions.cpp(6,32): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\Vlad Gitler\Desktop\projects c++\128\128\Zhilinskiy_1_Functions.cpp(11,11): warning C4244: '=': conversion from 'long double' to 'int', possible loss of data
+  128.vcxproj -> C:\Users\Vlad Gitler\Desktop\projects c++\128\Debug\128.exe

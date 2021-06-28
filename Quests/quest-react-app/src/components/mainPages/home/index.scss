@@ -1,0 +1,87 @@
+@import "../../../variables";
+.section__gallery{
+   min-height: 623px;
+   @include setFont('Amiri', 400, 2.8125rem, 3.375rem);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   padding-top: 76px;
+   h2 {
+      @include setFont('Amiri', 400, 55px, 97px);
+      text-align: center;
+      color: #FFFFED;
+   }
+   p {
+      max-width: 1476px;
+      @include setFont('Amiri', 400, 30px, 53px);
+      text-align: center;
+      color: rgba(184, 184, 170, 0.8);
+      margin: 76px auto 0px auto;
+   }
+}
+.quest-gallery-nav {
+   display: flex;
+   max-width: 1654px;
+   margin: 0 auto;
+   padding: 0 40px 0 40px;
+   flex-wrap: wrap;
+   padding-bottom: 195px;
+   justify-content: space-between;
+}
+.quest-item-nav {
+   display: flex;
+   flex-direction: column;
+   margin-top: 166px;
+   max-width: 737px;
+ 
+   .quest-img-nav {
+     width: 737px;
+     height: 591px;
+     border: 1px solid $brdr_color1;
+     border-radius: 15px;
+     margin-bottom: 10px;
+   }
+ 
+   .quest-info-nav {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     font-weight: normal;
+     font-size: 50px;
+     line-height: 88px;
+     text-align: center;
+     
+     color: #B8B8AA;
+ 
+ 
+     .people {
+       text-align: right;
+     }
+     .difficulty-nav,.amount-nav {
+      font-size: 36px;
+     }
+   }
+ 
+ 
+   .btn-nav {
+     margin-right: auto;
+     background-color: $bg_color3;
+     width: 298px;
+     height: 74px;
+     font-size: 36px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 5px 10px;
+     color: $txt_color3;
+     border-radius: 25px;
+     @include setFont('Amiri', 500, 1.2rem, 1.6rem);
+     cursor: pointer;
+     user-select: none;
+   }
+ }
+
+.vladis {
+   color:#B8B8AA;
+   font-size: 20px;
+}
